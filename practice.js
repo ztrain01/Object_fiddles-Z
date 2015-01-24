@@ -17,17 +17,25 @@ alert(me.name);
 
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
-  //Code here
+var favoriteThings = {};
+favoriteThings.band = "Coheed and Canbria";
+favoriteThings.food = "Pasta";
+favoriteThings.person = "Kate";
+favoriteThings.book = "Enders Game";
+favoriteThings.movie = "Star Wars Trilogy";
+favoriteThings.holiday = "Valentines Day";
 
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
-  //Code here
+favoriteThings.car = "Mustang";
+favoriteThings.brand = "Subaru";
 
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
-  //Code here
+favoriteThings.food = "Lettuce";
+favoriteThings.book = "50 Shades of Gray"
 
 
 
@@ -44,17 +52,20 @@ Set the value of that key to 'chapstick'.
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
-  //Code here
+var backPack = {};
+var item = "firstPocket";
+backPack[item] = "chapstick";
+
 
 //After you do the above, alert your entire backPack object.
 
-  //Code here
+alert(backPack);
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
-  //Code here
+console.log(backPack)
 
 
 
@@ -66,12 +77,22 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+var me = {};
+me.name = "Zander";
+me.age = "25";
+me.gender = "Male";
+me.married = "No";
+me.eyeColor = "Brown";
+me.hairColor = "Black";
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
-
+var zander = function(me) {
+  for (var i = 0; i < arr.legth; i++) {
+    alert(i);
+    console.log(zander);
+  }
+}
 
 
 
@@ -82,7 +103,12 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+var album = {};
+album.alex = "2:34";
+album.zander = "5:08";
+album.phillip = "5:04";
+album.vasquez = "3:45";
+album.allen = "4:15";
 
 //Now, loop through your album object alerting every song title individually.
 
