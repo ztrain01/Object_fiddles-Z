@@ -138,8 +138,6 @@ for (var key in states) {
 }
 
 
-
-
 //NEXT PROBLEM
 
 
@@ -156,11 +154,18 @@ var user = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+for (var key in user) {
+  if (!user[key]) {
+    delete user[key];
+  } else {
+    alert(user[key]);
+  }
+}
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
+user.name = "Zander"
+user.username = "ztrain01"
 
 
 
@@ -184,11 +189,12 @@ var user = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+user.name = "Tyler S. Mcginnis"
+user.email = "tylermcginnis@devmounta.in"
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
+user.sayName()
 
 
 
@@ -200,17 +206,20 @@ var user = {
 
 //Create an empty object called methodCollection.
 
-  //Code Here
+ var methodCollection = {};
+
 
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
-  //Code Here
+methodCollection.alertHello = alert("hello");
+methodCollection.logHello = console.log("hello");
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
+ alertHello()
+ logHello()
 
 
 
