@@ -218,8 +218,8 @@ methodCollection.logHello = console.log("hello");
 
 //Now call your alertHello and logHello methods.
 
- alertHello()
- logHello()
+ methodCollection.alertHello()
+ methodcollection.logHello()
 
 
 
@@ -259,7 +259,9 @@ var colt = {
 array with those four objects. After that console.log the length of the Array and make
 sure that it's equal to 4. */
 
-  //Code Here
+var devMountainEmployees = [];
+devMountainEmployees.push(tyler, cahlan, ryan, colt);
+devMountainEmployees.length; 
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absense to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
