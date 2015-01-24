@@ -87,13 +87,9 @@ me.hairColor = "Black";
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-var zander = function(me) {
-  for (var i = 0; i < arr.legth; i++) {
-    alert(i);
-    console.log(zander);
+  for (var i in me) {
+    alert(me[i]);
   }
-}
-
 
 
 //NEXT PROBLEM
@@ -112,7 +108,9 @@ album.allen = "4:15";
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
+ for (var key in album) {
+    alert(key);
+  }
 
 
 
